@@ -46,7 +46,7 @@ export default function AboutPage() {
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Since 1995, Quality Work Granite has been transforming homes with exceptional
             stone craftsmanship. What started as a small family business has grown into
-            one of the region's most trusted names in granite and stone installation.
+            one of the region&apos;s most trusted names in granite and stone installation.
           </p>
         </motion.div>
 

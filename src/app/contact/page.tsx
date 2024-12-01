@@ -183,7 +183,7 @@ export default function ContactPage() {
 
               {status === 'success' && (
                 <div className="text-green-500 text-sm">
-                  Message sent successfully! We'll get back to you soon.
+                  Message sent successfully! We&apos;ll get back to you soon.
                 </div>
               )}
 
