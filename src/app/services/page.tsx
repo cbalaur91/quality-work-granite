@@ -109,7 +109,7 @@ export default function ServicesPage() {
         <div className="mt-16 text-center">
           <h2 className="text-2xl font-bold mb-4">Custom Projects</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            Have a unique project in mind? We'd love to help bring your vision to life.
+            Have a unique project in mind? We&apos;d love to help bring your vision to life.
           </p>
           <a
             href="/contact"
