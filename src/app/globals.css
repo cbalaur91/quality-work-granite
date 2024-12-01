@@ -2,20 +2,128 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142 71% 45%;
+    --primary-foreground: 144 100% 97%;
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 7%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 7%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 13%;
+    --input: 0 0% 7%;
+    --ring: 142 71% 45%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-0;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Dark mode form styles */
+.dark input,
+.dark textarea,
+.dark select {
+  @apply bg-secondary border-border/10 text-foreground;
+}
+
+/* Dark mode card styles */
+.dark .bg-white {
+  @apply bg-card;
+}
+
+/* Improved dark mode text contrast */
+.dark .text-gray-600,
+.dark .text-gray-500 {
+  @apply text-gray-300;
+}
+
+.dark .text-gray-800,
+.dark .text-gray-700 {
+  @apply text-gray-100;
+}
+
+/* Dark mode hover states */
+.dark .hover\:bg-gray-100:hover {
+  @apply hover:bg-secondary;
+}
+
+.dark .hover\:bg-gray-800:hover {
+  @apply hover:bg-secondary/80;
+}
+
+/* Dark mode navigation */
+.dark .bg-white\/90 {
+  @apply bg-black/90;
+}
+
+.dark .bg-white\/80 {
+  @apply bg-black/80;
+}
+
+/* Dark mode borders */
+.dark .border-gray-200 {
+  @apply border-white/10;
+}
+
+/* Dark mode buttons */
+.dark .bg-gray-900 {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
+}
+
+/* Dark mode gradients */
+.dark .bg-gradient-to-r {
+  @apply from-black/80 to-black/60;
+}
+
+/* Accent colors for dark mode */
+.dark .accent-color {
+  color: hsl(var(--primary));
+}
+
+.dark .accent-bg {
+  background-color: hsl(var(--primary));
+}
+
+/* Dark mode shadows */
+.dark .shadow-lg {
+  @apply shadow-black/20;
 }
