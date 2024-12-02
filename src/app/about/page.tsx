@@ -46,7 +46,7 @@ export default function AboutPage() {
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           QualityWorkGranite is your go-to source for all things granite countertops. Our team of experts has years of experience working with this 
           versatile and durable material, allowing us to bring you the best in design, craftsmanship, and quality. We understand the importance of having 
-          a functional and beautiful kitchen, and that's why we work closely with our clients to create custom solutions that fit their specific needs and preferences. 
+          a functional and beautiful kitchen, and that&apos;s why we work closely with our clients to create custom solutions that fit their specific needs and preferences. 
           From selection to installation, QualityWorkGranite is dedicated to delivering a seamless and stress-free experience. Upgrade your kitchen today with 
           granite countertops from QualityWorkGranite and enjoy a space that is both functional and beautiful for years to come.
           </p>
