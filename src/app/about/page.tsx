@@ -7,19 +7,19 @@ const teamMembers = [
   {
     name: 'Tony Vacaru',
     role: 'Founder & Master Countertop Designer',
-    image: '/images/team/Tony.jpg',
+    image: '/images/Team/Tony.jpg',
     bio: 'Over 25 years of expertise in crafting and customizing granite countertops to perfection.',
   },
   {
     name: 'Denis Vacaru',
     role: 'Countertop Design Consultant',
-    image: '/images/team/Denis.jpg',
+    image: '/images/Team/Denis.jpg',
     bio: 'Specialist in designing stunning kitchen and bathroom spaces with premium granite countertops.',
   },
   {
     name: 'Bogdan Costea',
     role: 'Granite Installation Expert',
-    image: '/images/team/Bogdan.jpg',
+    image: '/images/Team/Bogdan.jpg',
     bio: '15 years of experience in precision installation of granite countertops for homes and businesses.',
   },
 ]
