@@ -6,20 +6,20 @@ const teamMembers = [
   {
     name: 'Tony Vacaru',
     role: 'Founder & Master Countertop Designer',
-    image: '/images/Team/Tony.jpg',
-    bio: 'Over 25 years of expertise in crafting and customizing granite countertops to perfection.',
+    image: '/images/Team/Tony2.jpg',
+    bio: 'Over 10 years of expertise in crafting and customizing granite countertops to perfection.',
   },
   {
     name: 'Denis Vacaru',
     role: 'Countertop Design Consultant',
-    image: '/images/Team/Denis.jpg',
+    image: '/images/Team/Denis3.jpg',
     bio: 'Specialist in designing stunning kitchen and bathroom spaces with premium granite countertops.',
   },
   {
     name: 'Bogdan Costea',
     role: 'Granite Installation Expert',
-    image: '/images/Team/Bogdan.jpg',
-    bio: '15 years of experience in precision installation of granite countertops for homes and businesses.',
+    image: '/images/Team/Bogdan3.jpg',
+    bio: '5 years of experience in precision installation of granite countertops for homes and businesses.',
   },
 ]
 
@@ -100,7 +100,7 @@ export default function AboutPage() {
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
-                    style={{ objectPosition: '0 40%' }}
+                    style={{ objectPosition: '0 30%' }}
                   />
                 </div>
                 <div className="p-6">
