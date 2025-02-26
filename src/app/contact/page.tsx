@@ -230,18 +230,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Map */}
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold mb-6">Location</h2>
-              <div className="mb-6">
-                <GoogleMap address="26086 W 8 Mile Rd, Southfield, Michigan 48033" />
-              </div>
-              <div className="text-center">
-                <p className="text-lg font-semibold mb-2">Quality Work Granite</p>
-                <p className="text-gray-600 dark:text-gray-300">26086 W 8 Mile Rd</p>
-                <p className="text-gray-600 dark:text-gray-300">Southfield, Michigan 48033</p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>

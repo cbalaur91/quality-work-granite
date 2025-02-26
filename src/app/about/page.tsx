@@ -159,23 +159,6 @@ export default function AboutPage() {
           </div>
         </motion.div>
 
-        {/* Location Map */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="mt-16"
-        >
-          <h2 className="text-3xl font-bold text-center mb-8">Visit Our Showroom</h2>
-          <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-            <GoogleMap address="26086 W 8 Mile Rd, Southfield, Michigan 48033" />
-            <div className="p-6 text-center">
-              <p className="text-lg font-semibold mb-2">Quality Work Granite</p>
-              <p className="text-gray-600 dark:text-gray-300">26086 W 8 Mile Rd</p>
-              <p className="text-gray-600 dark:text-gray-300">Southfield, Michigan 48033</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   )
