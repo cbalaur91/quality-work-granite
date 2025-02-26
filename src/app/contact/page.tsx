@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Phone, Mail, Clock, MapPin } from 'lucide-react'
-import emailjs from '@emailjs/browser'
 
 const contactInfo = {
   phone: '(734) 334-7522',
