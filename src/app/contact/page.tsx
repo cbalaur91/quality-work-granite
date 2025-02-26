@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Phone, Mail, Clock, MapPin } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 
 const contactInfo = {
   phone: '(734) 334-7522',
@@ -20,40 +21,10 @@ export default function ContactPage() {
     message: '',
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
-  const [errorMessage, setErrorMessage] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setStatus('loading')
-    setErrorMessage('')
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-
-      const data = await response.json()
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to send message')
-      }
-
-      setStatus('success')
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        projectType: '',
-        message: '',
-      })
-    } catch (error) {
-      setStatus('error')
-      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message')
-    }
+    setStatus('error')
   }
 
   const handleChange = (
@@ -176,27 +147,29 @@ export default function ContactPage() {
                 />
               </div>
 
-              {status === 'error' && (
-                <div className="text-red-500 text-sm">{errorMessage}</div>
-              )}
-
-              {status === 'success' && (
-                <div className="text-green-500 text-sm">
-                  Message sent successfully! We&apos;ll get back to you soon.
-                </div>
-              )}
-
               <button
                 type="submit"
-                disabled={status === 'loading'}
-                className={`w-full bg-primary text-primary-foreground px-6 py-3 rounded-md transition-colors ${
-                  status === 'loading'
-                    ? 'opacity-50 cursor-not-allowed'
-                    : 'hover:bg-primary/90'
-                }`}
+                className="w-full py-3 px-4 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
               >
-                {status === 'loading' ? 'Sending...' : 'Send Message'}
+                Send Message
               </button>
+              
+              {status === 'error' && (
+                <div className="text-center space-y-2">
+                  <p className="text-amber-600 dark:text-amber-400">
+                    Our contact form is temporarily unavailable.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Please send your request directly to{' '}
+                    <a 
+                      href="mailto:tonytzaeu@yahoo.com"
+                      className="text-primary hover:underline"
+                    >
+                      tonytzaeu@yahoo.com
+                    </a>
+                  </p>
+                </div>
+              )}
             </form>
           </motion.div>
 
