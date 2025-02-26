@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import GoogleMap from '@/components/GoogleMap'
 
 const teamMembers = [
   {
