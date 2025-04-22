@@ -23,13 +23,6 @@ const teamMembers = [
   },
 ]
 
-const certifications = [
-  'Natural Stone Institute Certified',
-  'Licensed General Contractor',
-  'BBB A+ Rating',
-  'EPA Lead-Safe Certified',
-]
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen pt-16">
