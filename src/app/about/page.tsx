@@ -112,52 +112,6 @@ export default function AboutPage() {
             ))}
           </div>
         </motion.div>
-
-        {/* Certifications */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg"
-        >
-          <h2 className="text-3xl font-bold text-center mb-8">
-            Certifications & Warranties
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Our Certifications</h3>
-              <ul className="space-y-3">
-                {certifications.map((cert) => (
-                  <li key={cert} className="flex items-center">
-                    <svg
-                      className="w-5 h-5 text-green-500 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    {cert}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Our Warranty</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                We stand behind our work with a comprehensive warranty that covers both
-                materials and craftsmanship. Our installations come with a 5-year warranty
-                on workmanship and we honor all manufacturer warranties on materials.
-              </p>
-            </div>
-          </div>
-        </motion.div>
-
       </div>
     </div>
   )
