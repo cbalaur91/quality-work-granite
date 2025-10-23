@@ -45,7 +45,7 @@ Before merging to main, manually test the following on your local build:
 #### 5. **Contact Page** ([/contact](http://localhost:3000/contact))
    - [ ] Page loads without errors
    - [ ] Contact form displays correctly
-   - [ ] Google Maps component loads ([GoogleMap.tsx](src/components/GoogleMap.tsx))
+   - [ ] Contact information displays correctly (phone, email, address, hours)
    - [ ] Form submission works (if implemented)
    - [ ] EmailJS integration works ([@emailjs/browser](package.json#L12))
 
