@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Remove experimental.turbopackUseSystemTlsCerts - not needed in Next.js 16
 };
 
 export default nextConfig;
